@@ -5,6 +5,7 @@
 #ÁLVARO BURGOS 21.577.347-7
 import pygame
 import sys
+import random
 #Constantes
 ANCHO = 500
 ALTO = 500
