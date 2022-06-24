@@ -48,6 +48,15 @@ def main():
         ventana.fill((192, 162, 250))
         #Dibujar al jugador
         pygame.draw.rect(ventana,(153, 131, 8), pygame.Rect(xMorcos,yMorcos,25,25))
+        x=random.randint(0,4)
+        if x==0 and xEnemigo!=0:
+            xEnemigo -=25
+        if x==1 and xEnemigo!=450:
+            xEnemigo +=25
+        if x==2 and yEnemigo!=0:
+            yEnemigo -=25
+        if x==3 and yEnemigo!=450:
+            yEnemigo +=25
         for event in pygame.event.get():
             if (event.type == pygame.QUIT):
                 corre=False
