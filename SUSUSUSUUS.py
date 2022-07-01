@@ -197,8 +197,10 @@ def main():
     while corriendo:
 
         #ESTABLECER FPS
+        #RELLENAR FONDO
 
         reloj.tick(120) 
+        ventana.fill((240, 24, 162))
 
         #ACTUALIZAR POSICIÓN DE CADA OBJETO
 
@@ -214,7 +216,7 @@ def main():
 
         #CUANDO EL CONTADOR VALGA 20, LOS BOTS SE MOVERÁN ALEATORIAMENTE
 
-        if cont==10:
+        if cont==20:
             cont=0
             xEnemigo,yEnemigo,tablero=(MovBots(xEnemigo,yEnemigo,tablero))
             xTrip_1,yTrip_1,tablero=(MovBots(xTrip_1,yTrip_1,tablero))
